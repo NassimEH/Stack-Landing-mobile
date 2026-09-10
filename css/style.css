@@ -1020,6 +1020,8 @@ header.fixed .navbar {
     border-radius: 100%;
     filter: blur(120px);
     position: absolute;
+    pointer-events: none;
+    z-index: 0;
 }
 
 .blure_shape.bs_1 {
@@ -1724,7 +1726,7 @@ iframe#youtubevideo {
 .cta_section.new .cta_box{
     background: var(--primery);
     position: relative; 
-    z-index: 99;
+    z-index: 2;
     border-radius: 20px;
     padding: 60px 50px;
     display: flex;
@@ -1817,6 +1819,11 @@ footer .top_footer {
     padding: 200px 0 00px 0;
     position: relative;
     overflow: hidden;
+}
+
+footer .top_footer > .container {
+    position: relative;
+    z-index: 2;
 }
 
 
@@ -2213,8 +2220,8 @@ footer .bottom_footer .developer_text a {
     max-width: 1370px;
     margin: 0 auto;
     padding: 120px 0;
-    position: sticky;
-    z-index: 99;
+    position: relative;
+    z-index: 1;
     border-radius: 30px;
     overflow: hidden;
     background-color: var(--black);
@@ -2306,8 +2313,8 @@ footer .bottom_footer .developer_text a {
     max-width: 1370px;
     margin: 0 auto;
     padding: 120px 40px;
-    position: sticky;
-    z-index: 99;
+    position: relative;
+    z-index: 1;
     border-radius: 30px;
     overflow: hidden;
     background-image: url("../images/restaurant_bg.webp");
