@@ -1,0 +1,156 @@
+/* Stack landing overrides */
+
+.navbar-brand img {
+  height: 42px;
+  width: auto;
+}
+
+.banner_text h1 .brand_mark {
+  color: var(--primery);
+}
+
+.track_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.track_card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 28px 24px;
+  text-align: left;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.track_card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(37, 99, 235, 0.12);
+}
+
+.track_card .track_swatch {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+.track_card h6 {
+  font-family: "Lexend", sans-serif;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.track_card p {
+  color: var(--greay);
+  margin: 0;
+  font-size: 15px;
+}
+
+.legal_page {
+  background: var(--secondary);
+  min-height: 100vh;
+}
+
+.legal_page .legal_wrap {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 120px 20px 80px;
+}
+
+.legal_page h1 {
+  font-family: "Lexend", sans-serif;
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  margin-bottom: 0.4rem;
+}
+
+.legal_page .meta {
+  color: var(--dark-greay);
+  margin-bottom: 2rem;
+}
+
+.legal_page h2 {
+  font-family: "Lexend", sans-serif;
+  font-size: 1.25rem;
+  margin: 2rem 0 0.75rem;
+  color: var(--body-text);
+}
+
+.legal_page h3 {
+  font-family: "Lexend", sans-serif;
+  font-size: 1.05rem;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.legal_page p,
+.legal_page li {
+  color: #334155;
+  line-height: 1.7;
+}
+
+.legal_page ul {
+  padding-left: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.legal_page li {
+  margin-bottom: 0.4rem;
+}
+
+.legal_page a {
+  color: var(--primery);
+}
+
+.legal_toc {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 20px 24px;
+  margin-bottom: 2rem;
+}
+
+.legal_toc ol {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.legal_toc a {
+  text-decoration: none;
+}
+
+.legal_toc a:hover {
+  text-decoration: underline;
+}
+
+.navbar-brand .brand_text {
+  font-family: "Lexend", sans-serif;
+  font-weight: 700;
+  font-size: 1.35rem;
+  color: var(--body-text);
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+footer .logo img {
+  height: 40px;
+  width: auto;
+}
+
+.dap_image img.stack_dap {
+  max-width: 180px;
+  margin: 0 auto;
+  display: block;
+}
+
+@media (max-width: 991px) {
+  .track_grid {
+    grid-template-columns: 1fr;
+  }
+}
