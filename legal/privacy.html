@@ -41,7 +41,7 @@
 
   <main class="legal_wrap">
     <h1>Politique de confidentialité</h1>
-    <p class="meta">Stack · Dernière mise à jour : 10 septembre 2026 · Version 1.0</p>
+    <p class="meta">Stack · Dernière mise à jour : 21 septembre 2026 · Version 1.0.1</p>
 
     <nav class="legal_toc" aria-label="Sommaire">
       <strong>Sommaire</strong>
@@ -67,7 +67,7 @@
       <h2>1. Responsable du traitement</h2>
       <p>
         L’application mobile <strong>Stack</strong> (identifiants de package/bundle
-        <code>com.stack.app</code>) est éditée dans le cadre d’un projet pédagogique / produit indépendant.
+        <code>me.nassimelh.stack</code>) est éditée dans le cadre d’un projet pédagogique / produit indépendant.
       </p>
       <p>
         <strong>Contact privacy / support :</strong>
@@ -108,11 +108,13 @@
         <li>Avatar optionnel (photo choisie depuis la galerie)</li>
         <li>Identifiant technique utilisateur</li>
         <li>En cas de connexion Google : identifiants fournis par Google OAuth nécessaires à la création / liaison de session</li>
+        <li>En cas de Sign in with Apple : identifiant Apple stable (<code>sub</code>), e-mail (ou adresse Hide My Email), prénom éventuellement fourni une seule fois par Apple</li>
       </ul>
       <p>
-        L’authentification et la synchronisation passent par <strong>Neon Auth (Better Auth)</strong>
-        et <strong>Neon Postgres (Data API)</strong>. Les cookies / jetons de session sont stockés de façon
-        sécurisée sur l’appareil via <strong>SecureStore</strong>.
+        L’authentification e-mail / mot de passe passe par <strong>Neon Auth (Better Auth)</strong>.
+        Sign in with Apple et Google natifs utilisent une session Stack sécurisée côté API Expo,
+        avec synchronisation de progression via <strong>Neon Postgres</strong>. Les jetons de session
+        sont stockés de façon sécurisée sur l’appareil via <strong>SecureStore</strong>.
       </p>
 
       <h3>3.2 Progression &amp; profil d’apprentissage</h3>
@@ -207,10 +209,11 @@
       <h2>6. Sous-traitants &amp; destinataires</h2>
       <p>Selon les fonctionnalités utilisées, vos données peuvent être traitées par :</p>
       <ul>
-        <li><strong>Neon</strong> — authentification (Better Auth) et base Postgres / Data API (compte, profil, progression).</li>
+        <li><strong>Neon</strong> — authentification e-mail (Better Auth) et base Postgres / Data API (compte, profil, progression).</li>
         <li><strong>PostHog</strong> — analytics produit, uniquement si opt-in.</li>
         <li><strong>Google</strong> — si vous choisissez « Continuer avec Google » (authentification OAuth).</li>
-        <li><strong>Apple / Google Play</strong> — distribution de l’app, traitements propres aux stores (achats éventuels futurs, etc.).</li>
+        <li><strong>Apple</strong> — si vous choisissez Sign in with Apple (authentification) ; aussi distribution App Store.</li>
+        <li><strong>Google Play</strong> — distribution Android, traitements propres au store.</li>
         <li><strong>Fournisseurs de notifications</strong> (via Expo / OS) — si les notifications sont activées.</li>
       </ul>
       <p>
